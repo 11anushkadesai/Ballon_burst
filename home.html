@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <audio src="/Graphics/baby-game-mane-without-laughter-8779.mp3" autoplay loop></audio>
+    <!-- clouds -->
+    <div id="cloud_con">
+        <img src="/Graphics/Symbol 27.png" id="cloud">
+    </div>
+    <div id="cloud_con2">
+        <img src="/Graphics/Symbol 27.png" id="cloud2">
+    </div>
+
+    <!-- back -->
+     <div id="back">
+        <img src="/Graphics/back.png" alt="Back" id="back_img" onclick="goback()">
+     </div>
+     
+    <!-- score  -->
+     <div id="score">Score:</div>
+    
+    <!-- Machine -->
+     <div class="machine">
+        <div id="p1">
+            <img src="/Graphics/machine_leftpart.png" id="machine_leftpart">
+        </div>
+        <div id="p2">
+            <div id="t">
+                <img src="/Graphics/machine_top.png" id="machine_top"  onclick="onpress()">
+            </div>
+            <div id="b">
+                <img src="/Graphics/machine_bottom.png" id="machine_bottom">
+            </div>
+        </div>
+     </div>
+
+
+    <!-- Balloon -->
+     <!-- <div class="balloon">
+        <div id="b1">
+            <img src="/Graphics/alpha_1.png" alt="">
+        </div>
+        <div id="b2">
+            <img src="/Graphics/Symbol 100011.png" alt="">
+        </div>
+     </div> -->
+
+    <!-- javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+    <script src="home.js"></script>
+    <script src="balloon.js"></script>
+
+    <!-- back to home page  -->
+    <script>
+        function goback(){
+            window.history.back();
+        }
+    </script>
+
+    
+    
+     
+    
+</body>
+</html>
